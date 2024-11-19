@@ -1,0 +1,218 @@
+/* Import de la police Billabong */
+@font-face {
+    font-family: 'Billabong';
+    src: url('img/FontsFree-Net-Billabong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Application au titre */
+h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #262626;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fafafa;
+    color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section gauche : Aperçu de l'application */
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    position: relative;
+}
+
+.phone-frame {
+    position: relative;
+    max-width: 380px;
+}
+
+.phone-frame img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.app-screenshots {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.screenshot {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section droite : Formulaire */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 350px;
+}
+
+.form-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: 'Billabong', cursive;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #0095f6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #007dd1;
+}
+
+.divider {
+    margin: 20px 0;
+    position: relative;
+    color: #8e8e8e;
+    font-size: 13px;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    height: 1px;
+    background: #ddd;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.facebook-login {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    color: #385185;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgot-password {
+    color: #385185;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Section d'inscription */
+.signup-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.signup-container p {
+    font-size: 14px;
+}
+
+.signup-container a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Section de téléchargement */
+.download-container {
+    text-align: center;
+}
+
+.download-container p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.download-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.store-button {
+    width: 135px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 5px;
+}
